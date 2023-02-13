@@ -1,0 +1,73 @@
+:root{
+    --blue-color: #66E2DC;
+    --pink-color: #FA7453;
+    --orange-color: #FFB964;
+    --dark-color: #191826;
+    --light-color: #FCFAF9;
+}
+*{
+    /* background-image: url(assets/bg-main-tablet.png); */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins" Sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+nav .logo{
+margin-left: 165px;
+margin-top: 62px;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-left: 165px;
+    
+}
+.hero-section .left {
+    position: absolute;
+    width: 1015px;
+    height: 176px;
+    left: 165px;
+    top: 221px;
+}
+
+.hero-section .left h1{
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    color: #191826;
+}
+
+.hero-section .left p{
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+    margin-top: -40px;
+}
+
+.download-section{
+    display: flex;
+    /* position: absolute; */
+    width: 1110px;
+    height: 600px;
+    left: 165px;
+    margin-top: 400px;
+    background: #191826;
+    border-radius: 12px;
+}
