@@ -1,23 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
 :root{
     --blue-color: #66E2DC;
     --pink-color: #FA7453;
     --orange-color: #FFB964;
-    --dark-color: #191826;
+    --dark-color: #191826; 
     --light-color: #FCFAF9;
-}
-*{
-    /* background-image: url(assets/bg-main-tablet.png); */
+    --main-font: IBM Plex Sans;
 }
 
-*,
+
+/* *,
 *::after,
 *::before {
     box-sizing: border-box;
-}
+} */
 
 body {
     margin: 0;
-    font-family: "Poppins" Sans-serif;
+    font-family: var(--main-font), sans-serif;
+
+    background-image: url("assets/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 nav {
@@ -31,34 +37,44 @@ margin-left: 165px;
 margin-top: 62px;
 }
 
+/* .bg-pattern-top img{
+    padding-left: 100px;
+} */
+
+
 /* Hero Section */
 .hero-section {
+    /* display: flex; */
+    width: 80%;
+    height: 100vh;
     margin-left: 165px;
+    margin-top: -450px;
+    /* padding-right: 50px;  */
+}
+
+
+.hero-section h1{
+    /* position: absolute; */
+    width: 100%;
+    height: 176px;
+    margin-top: 221px;
+    font-family: var(--main-font), sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+    color: var(--dark-color);
     
 }
-.hero-section .left {
-    position: absolute;
-    width: 1015px;
-    height: 176px;
-    left: 165px;
-    top: 221px;
-}
 
-.hero-section .left h1{
-    font-family: 'IBM Plex Sans';
-    font-weight: 700;
-    font-size: 88px;
-    line-height: 88px;
-    color: #191826;
-}
-
-.hero-section .left p{
-    font-family: 'IBM Plex Sans';
-    font-weight: 400;
-    font-size: 20px;
+.hero-section p{
+    font-family: var(--main-font), sans-serif;
+    font-style: normal;
+    font-weight: 40px;
+    font-size: 19px;
     line-height: 34px;
-    color: #191826;
-    margin-top: -40px;
+    color: var(--dark-color);
+    margin-top: 20px;
+    padding-right: -10px;
 }
 
 .download-section{
@@ -66,8 +82,163 @@ margin-top: 62px;
     /* position: absolute; */
     width: 1110px;
     height: 600px;
-    left: 165px;
-    margin-top: 400px;
+    margin-left: 165px;
+    top: 860px;
     background: #191826;
     border-radius: 12px;
+}
+.download-section .left img{
+    z-index: 0;
+    width: 320px;
+    height: 556px;
+    margin-left: -180px;
+    margin-top: -140%;
+    /* margin-right: -50px; */
+}
+ 
+.bg-pattern-top img{
+    width: 290px;
+    height: 410px;
+    z-index: 0;
+    margin-left: 110%;
+    margin-top: -50px;
+}
+
+.download-section .right{
+    z-index: 1;
+    width: 446px;
+    height: 625px;
+    margin-top: 8%;
+    margin-right: 100px;
+    margin-left: 10%;
+    background: #FA7453;
+    border-radius: 12px;
+}
+.download-section .right h3{
+    margin-left: 54px;
+    margin-top: 50px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--light-color)
+}
+
+.download-section .right p{
+    font-family: 'IBM Plex Sans';
+    margin-left: 54px;
+    margin-top: -20px;
+    width: 333px;
+    height: 170px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--light-color)
+}
+
+.download-section .right h2{
+    margin-left: 54px;
+    height: 52px;
+    left: 0%;
+    right: 52.12%;
+    top: calc(50% - 52px/2);
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: var(--light-color)
+}
+
+.download-section .right span{
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: var(--light-color);
+}
+
+.click-on{
+    margin-left: 54px;
+    margin-top: -15px;
+    
+}
+
+
+.ios{
+    width: 333px;
+    height: 61px;
+    background: #191826;
+    border-radius: 12px;
+    border: none;
+    color: var(--light-color);
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+}
+
+.ios:hover{
+    cursor: pointer;
+    background: var(--blue-color);
+}
+
+.android{
+    width: 333px;
+    height: 61px;
+    background: #FCFAF9;
+    border-radius: 12px;
+    margin-top: 16px;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+   
+}
+.android:hover{
+    cursor: pointer;
+    background: var(--orange-color);
+}
+button img{
+    padding-right: 8px;
+}
+
+
+footer{
+    display: flex;
+    margin-left: 165px;
+    margin-top: 180px;
+    width: 1110px;
+    height: 79px;
+    margin-bottom: 50px;
+}
+footer p{
+    width: 366px;
+    margin-left: 138px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-color)
+}
+.web{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.icons{
+    margin-left: 359px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+svg:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+   
 }
